@@ -59,7 +59,7 @@ export default function FeaturedProject() {
           </div>
 
           <div className="grid items-end gap-8 lg:grid-cols-12">
-            <h2 className="cyber-heavy uppercase leading-[0.82] tracking-[-0.06em] lg:col-span-8">
+           <h2 className="cyber-heavy featured-project-heading uppercase leading-[0.92] lg:col-span-8">
               <span className="block text-[clamp(3.5rem,9vw,9rem)]">
                 Featured
               </span>

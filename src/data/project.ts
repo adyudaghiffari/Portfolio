@@ -28,43 +28,45 @@ export type Project = {
   accent: string;
   secondaryAccent: string;
   href: string;
+  actionLabel?: string;
   repository?: string;
   status: "completed" | "in-progress";
   metrics: ProjectMetric[];
-  visual: "iot" | "map" | "dashboard";
+  visual: "bike-sharing" | "map" | "dashboard";
 };
 
 export const FEATURED_PROJECTS: Project[] = [
   {
-    id: "iot-monitoring",
+    id: "bike-sharing-analysis",
     number: "01",
-    title: "IoT Monitoring System",
-    shortTitle: "IoT System",
-    category: "Internet of Things",
+    title: "Bike Sharing Analysis",
+    shortTitle: "Bike Analytics",
+    category: "Data Analysis",
     year: "2026",
     description:
-      "A real-time IoT architecture connecting devices, gateways, and servers through MQTT. Built with remote device management, local data storage, token synchronization, and automatic raw-data backup.",
-    tags: ["Python", "MQTT", "EMQX", "SQLite"],
+      "An exploratory analysis of bike-sharing demand across time, weather conditions, and rider segments. The project combines data preparation, visual exploration, and an interactive dashboard to communicate usage patterns and support data-informed decisions.",
+    tags: ["Python", "Pandas", "EDA", "Streamlit"],
     accent: "#caff00",
     secondaryAccent: "#00e5ff",
-    href: "#",
-    repository: "#",
+    href: "https://adyuda-dashboard-bike-share-analysis.streamlit.app",
+    actionLabel: "Live dashboard",
+    repository: "https://github.com/adyudaghiffari/bike-sharing-analysis",
     status: "completed",
     metrics: [
       {
-        value: "3",
-        label: "System layers",
+        value: "EDA",
+        label: "Data exploration",
       },
       {
-        value: "RT",
-        label: "Live telemetry",
+        value: "24H",
+        label: "Hourly patterns",
       },
       {
-        value: "1H",
-        label: "Backup cycle",
+        value: "02",
+        label: "Rider segments",
       },
     ],
-    visual: "iot",
+    visual: "bike-sharing",
   },
   {
     id: "hotel-location",

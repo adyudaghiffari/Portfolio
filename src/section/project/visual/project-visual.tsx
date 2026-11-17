@@ -1,7 +1,7 @@
 import type { Project } from "../../../data/project";
 
 import DashboardVisual from "./dashboard-visual";
-import IoTVisual from "./iot-visual";
+import BikeSharingVisual from "./bike-sharing-visual";
 import MapVisual from "./map-visual";
 
 type ProjectVisualProps = {
@@ -21,8 +21,8 @@ export default function ProjectVisual({
   project,
 }: ProjectVisualProps) {
   switch (project.visual) {
-    case "iot":
-      return <IoTVisual project={project} />;
+    case "bike-sharing":
+      return <BikeSharingVisual project={project} />;
 
     case "map":
       return <MapVisual project={project} />;

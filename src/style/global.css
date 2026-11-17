@@ -254,6 +254,15 @@ a {
   letter-spacing: -0.035em;
 }
 
+/* Letter spacing khusus Featured Projects */
+.cyber-heavy.featured-project-heading {
+  letter-spacing: 0.015em;
+}
+
+.featured-project-heading {
+  letter-spacing: -0.005em;
+}
+
 /**
  * =========================================================
  * FRAME SCANLINES

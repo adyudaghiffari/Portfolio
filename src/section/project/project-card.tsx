@@ -201,7 +201,7 @@ export default function ProjectCard({
               boxShadow: `0 0 24px ${project.accent}25`,
             }}
           >
-            View case study
+            {project.actionLabel ?? "View case study"}
 
             <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
               <ArrowIcon />
